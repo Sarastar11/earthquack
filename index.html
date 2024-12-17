@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج محاكاة الزلازل للأطفال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📡 EarthQuack</h1>
+        <div class="earthquake-simulator">
+            <div id="earth" class="earth"></div>
+        </div>
+        <div class="info">
+            <p id="reading">📊 قراءة الاهتزاز: <span id="value">0</span> ريختر</p>
+            <p id="status">الحالة: الأرض هادئة 🟢</p>
+        </div>
+        <button id="simulate">بدء المحاكاة</button>
+    </div>
+
+     <!-- Sound Effects -->
+     <audio id="calm-sound" src="audio/calmSound.mp3"></audio>
+     <audio id="medium-sound" src="audio/mediumSound.mp3"></audio>
+     <audio id="alert-sound" src="audio/alertSound.mp3"></audio>
+     <audio id="alert" src="audio/alert.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
